@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>JS Lesson 2</title>
+</head>
+<body>
+	<script>
+		// задание 1
+		/*var a = 1, b = 1, c, d;
+		c = ++a; alert(c); // 2 сначала инкремент a, потом присвоение
+		d = b++; alert(d); // 1 сначала присвоение, потом инкремент b
+		c = (2+ ++a); alert(c); // 5 инкремент a даст уже 3, добавим 2 получим 5
+		d = (2+ b++); alert(d); // 4 здесь сначала идёт сложение 2+b(b=2 из 3 строки), потом инкремент b, поэтому 4
+		alert(a); // 3 инкрементировали 2 раза, поэтому 3
+		alert(b); // 3 инкрементировали 2 раза, поэтому 3
+		*/
+	</script>
+	<script>
+		// задание 2
+		/*var a = 2;
+		var x = 1 + (a *= 2);
+		alert(x);//5 x можно расписать так: x = 1 + (a = a * 2) = 1 + 4 = 5
+		*/
+	</script>
+	<script>
+		// задание 3
+		/*var a = +prompt(a);
+		var b = +prompt(b);
+		if (a >= 0 & b >= 0) {
+			alert (a - b);
+		}
+		if (a < 0 & b < 0) {
+			alert (a * b);
+		}
+		if ((a >= 0 & b < 0)||(a < 0 & b >= 0)) {
+			alert(a + b);
+		}*/
+	</script>
+	<script>
+		// задание 4
+
+	</script>
+	<script>
+		// задание 5
+		/*function summ(a,b) {
+			return (a + b);
+		}
+
+		function razn(a,b) {
+			return (a - b);
+		}
+		
+		function mult(a,b) {
+			return (a * b);
+		}
+
+		function divi(a,b) {
+			if (b = 0) {
+				alert ("На 0 делить нельзя!");
+			}
+			else {
+				return (a / b);	
+			}
+		}
+		alert (summ(10,15));
+		alert (razn(10,15));
+		alert (mult(10,15));
+		alert (divi(10,10));
+		*/
+	</script>
+	<script>
+		// задание 6
+		/*function MathOperations(a, b, oper) {
+			switch(oper) {
+				case "сложение":
+					alert (a + b);
+					break;
+				case "вычитание":
+					alert (a - b);
+					break;
+				case "умножение":
+					alert (a * b);
+					break;
+				case "деление":
+					if (b != 0) {
+						alert (a / b);
+					}
+					else {
+						alert ("Делить на 0 нельзя!");
+					}
+			}
+		}
+		var a = +prompt ("Введите первое число:");
+		var b = +prompt ("Введите второе число:");
+		var oper = prompt ("Введите арифметическое действие (допустимые: сложение, вычитание, умножение, деление):");
+		if (isNaN(a) || isNaN(b)) {
+			alert ("Вы ввели вместо числа буквенно-цифровую последовательность")
+		}
+		else {
+			if (oper == "сложение" || oper == "вычитание" || oper == "умножение" || oper == "деление") {
+				MathOperations(a, b, oper);
+			}
+			else {
+				alert ("Вы ввели недопустимую операцию!");
+			}
+		}
+		*/
+	</script>
+	<script>
+		//задание 7
+		//null - это есть "ничто", пустота, отсутствие какого-либо значения переменной
+		//0 - это число, это значение
+		//хотя такое выражение null == "0" будет истиной.
+	</script>
+	<script>
+		//задание 8
+		/*function power(val,pow) {
+			if (pow != 1) {
+				return val * power(val, pow - 1);
+			}
+			else {
+				return val;
+			}
+		}
+		var val = +prompt ("Введите основание степени");
+		var pow = +prompt ("Введите показатель степени");
+		if (isNaN(val) || isNaN(pow)) {
+			alert ("Вы ввели вместо числа буквенно-цифровую последовательность");
+		}
+		else {
+			if (pow <= 1) {
+				alert ("В данном примере показатель степени должен быть больше 1");
+			}
+			else {
+				alert(power(val,pow));
+			}
+		}
+		*/
+	</script>
+</body>
+</html>
